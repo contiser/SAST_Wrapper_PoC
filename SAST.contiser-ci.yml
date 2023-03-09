@@ -1,6 +1,6 @@
 include:
   template: Jobs/SAST.gitlab-ci.yml
-.sast-analyzer:
+".sast-analyzer":
   stage: test
   artifacts:
     reports:
