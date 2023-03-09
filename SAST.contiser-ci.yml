@@ -1,0 +1,12 @@
+include:
+  template: Jobs/SAST.gitlab-ci.yml
+sast:
+  stage: test
+  artifacts:
+    reports:
+      sast:
+      - gl-sast-report.json
+    paths:
+    - gl-sast-report.json
+  rules:
+  - when: always
